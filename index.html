@@ -27,35 +27,160 @@
       <h2>If you’re a founder, this might feel familiar</h2>
 
       <p>You’re building something B2B.</p>
+
       <p>
         You want to talk to:<br />
         <em>the right people at the right companies</em>
       </p>
 
+      <p>So you start “research”.</p>
+
       <ul>
         <li>Opening LinkedIn</li>
         <li>Searching companies</li>
-        <li>Clicking People</li>
+        <li>Clicking <em>People</em></li>
         <li>Adjusting filters</li>
         <li>Opening profiles one by one</li>
+        <li>Checking company websites</li>
         <li>Copying names into a sheet</li>
+      </ul>
+
+      <p>A couple of hours later:</p>
+
+      <ul>
+        <li>You’re tired</li>
+        <li>You haven’t sent a single message</li>
+        <li>You already know you’ll repeat this next time</li>
       </ul>
 
       <p>That repetition was the part I hated.</p>
     </section>
 
-    <!-- EARLY ACCESS FORM -->
+    <!-- Problem -->
+    <section class="section">
+      <h2>The actual problem (at least for me)</h2>
+
+      <p>It’s not that the work is hard.</p>
+
+      <ul>
+        <li>The thinking is always the same</li>
+        <li>The clicking is always the same</li>
+        <li>The filtering logic is always the same</li>
+      </ul>
+
+      <p>But we redo it manually every time we have a new idea.</p>
+
+      <p>
+        I didn’t want another SaaS tool for this.<br />
+        I wanted something simple that worked <strong>locally</strong>,
+        using <strong>my own browser and accounts</strong>.
+      </p>
+    </section>
+
+    <!-- Example -->
+    <section class="section">
+      <h2>🔁 A concrete example</h2>
+
+      <p>Recently, I needed to find:</p>
+
+      <ul>
+        <li>HR managers at <strong>US companies</strong> with <strong>50–300 employees</strong></li>
+        <li>In non-enterprise industries</li>
+        <li>Preferably at companies that were actively hiring</li>
+        <li>And not agencies or consulting firms</li>
+      </ul>
+
+      <p>Normally, this means:</p>
+
+      <ul>
+        <li>Manually checking company size</li>
+        <li>Skipping obvious noise</li>
+        <li>Opening profiles just to realize the role isn’t relevant</li>
+        <li>Backtracking constantly</li>
+      </ul>
+
+      <p>With the agent, I wrote the criteria once.</p>
+
+      <ul>
+        <li>Checked company size from multiple signals</li>
+        <li>Skipped agencies and consultancies</li>
+        <li>Focused on real HR decision-makers</li>
+        <li>Avoided interns and junior roles</li>
+        <li>Ignored companies that clearly weren’t a fit</li>
+      </ul>
+
+      <p>
+        What I got wasn’t more leads.<br />
+        It was <strong>fewer, better ones</strong>.
+      </p>
+
+      <p>Same outcome I wanted. Less second-guessing along the way.</p>
+    </section>
+
+    <!-- What it is -->
+    <section class="section">
+      <h2>What this tool is (and isn’t)</h2>
+
+      <p>It’s a <strong>local AI research agent</strong> that:</p>
+
+      <ul>
+        <li>Runs on your machine</li>
+        <li>Uses your browser</li>
+        <li>Uses your LinkedIn session</li>
+        <li>Uses your LLM or API key (optional)</li>
+      </ul>
+
+      <p>It automates the repetitive research part — not the decisions.</p>
+
+      <p class="muted">
+        Not a SaaS · Not a lead database · Not a scraper selling data
+      </p>
+    </section>
+
+    <!-- Local -->
+    <section class="section">
+      <h2>Why it runs locally</h2>
+
+      <ul>
+        <li>Your LinkedIn stays yours</li>
+        <li>Your browsing stays local</li>
+        <li>Your data doesn’t touch my servers</li>
+      </ul>
+
+      <p>If your laptop is offline, the tool doesn’t work. That’s the design.</p>
+    </section>
+
+    <!-- Subscription -->
+    <section class="section">
+      <h2>Why there’s no subscription</h2>
+
+      <p>You shouldn’t pay monthly for research you only do when you have an idea.</p>
+      <p>One-time purchase. Use it when you need it.</p>
+    </section>
+
+    <!-- COMMENT (Formspree) -->
+    <section class="section">
+      <h2>A quick check-in</h2>
+
+      <form action="https://formspree.io/f/mreglpwa" method="POST">
+        <input type="hidden" name="type" value="comment" />
+        <input type="hidden" name="_redirect" value="thank-you.html" />
+
+        <textarea
+          name="comment"
+          placeholder="Optional — share a line or two if you want."
+        ></textarea>
+
+        <button type="submit">Share anonymously</button>
+      </form>
+    </section>
+
+    <!-- EARLY ACCESS -->
     <section class="section box">
       <h2>Get early access (free)</h2>
 
-      <form
-        action="https://formspree.io/f/mreglpwa"
-        method="POST"
-      >
-        <!-- identify submission type -->
+      <form action="https://formspree.io/f/mreglpwa" method="POST">
         <input type="hidden" name="type" value="early_access" />
-
-        <!-- redirect after success -->
         <input type="hidden" name="_redirect" value="thank-you.html" />
 
         <input
@@ -69,9 +194,31 @@
       </form>
     </section>
 
+    <!-- SUPPORTER -->
+    <section class="section box">
+      <h2>Optional: early supporter access</h2>
+
+      <form action="https://formspree.io/f/mreglpwa" method="POST">
+        <input type="hidden" name="type" value="early_supporter" />
+        <input type="hidden" name="_redirect" value="thank-you.html" />
+
+        <button type="submit">I’ve paid</button>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        Questions or feedback:<br />
+        <strong>agarwalsanidhaya@gmail.com</strong>
+      </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      Built and maintained by <strong>Sanidhaya Agarwal</strong><br />
-      Runs locally · No cloud backend · Privacy-first
+      Built and maintained by <strong>Sanidhaya Agarwal (Founder)</strong><br />
+      No cloud backend · No usage tracking · Runs entirely on your machine
     </footer>
 
   </div>
